@@ -1,15 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Router, Route, browserHistory } from 'react-router';
-import Home from './app/screens/Home';
-import User from './app/screens/User';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './assets/styles.css';
+import jsmediatags from 'jsmediatags';
 
-ReactDOM.render(
-  <Router history={browserHistory}>
-    <Route path="/" component={Home} />
-    <Route path="/:username" component={User} />
-  </Router>,
-  document.getElementById('container')
-);
+debugger
+jsmediatags.read("./Sleep Away.mp3", {
+  onSuccess: function(tag) {
+    console.log(tag);
+  },
+  onError: function(error) {
+    console.log(':(', error.type, error.info);
+  }
+});

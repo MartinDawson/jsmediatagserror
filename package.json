@@ -27,6 +27,7 @@
     "axios": "0.13.1",
     "bootstrap": "^3.3.5",
     "history": "^3.0.0",
+    "jsmediatags": "^3.6.1",
     "moment": "^2.10.6",
     "react": "15.3.0",
     "react-dom": "15.3.0",
